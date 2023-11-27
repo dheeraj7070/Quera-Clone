@@ -1,0 +1,22 @@
+<%- include('header.ejs'); %>
+
+<div class="container">
+    <div class="wrapper">
+
+
+
+<div class="question">
+    <h3>Ask Question to Community</h3>
+    <form action="/api/post-question" method="post">
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="text" placeholder="Title" name="title" required>
+        <textarea name="body" id="" required cols="30" rows="10" placeholder="Write your answer here"></textarea>
+        <button type="submit">Post</button>
+    </form>
+</div>
+
+</div>
+</div>
+
+<%- include('footer.ejs'); %>

@@ -1,0 +1,10 @@
+<div class="question">
+    <button id="show-form">Post Answer</button>
+    <form id="ans-form" action="/api/ans" method="post" style="display: none;">
+        <input type="hidden" name="id" value = <%= question._id %> >
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <textarea name="answer" id="" cols="30" required rows="10" placeholder="Write your answer here"></textarea>
+        <button type="submit">Post</button>
+    </form>
+</div>

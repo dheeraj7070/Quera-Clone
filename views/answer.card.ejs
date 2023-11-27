@@ -1,0 +1,13 @@
+<% for(let i = 0; i < question.answer.length; i++) { %>
+    <div class="question">
+        <p class="label"><%= question.answer[i].name %></p>
+        <div class="body">
+           <% if(question.answer[i].ans != null) {%>
+            <p><%= question.answer[i].ans %></p>
+           <% } %>
+         </div>
+        
+
+    
+    </div>
+<% } %>

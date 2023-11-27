@@ -1,0 +1,21 @@
+<%- include('header.ejs'); %>
+
+    <div class="container">
+        <div class="wrapper">
+            <%- include('question.card.ejs',{question : question}); %>
+    
+            <h2><%= question.answer.length %> Answer</h2>
+            <%- include('postAnswer.form.ejs', {question : question}); %>
+           
+            
+            <%- include('answer.card.ejs',{question : question}); %>
+        </div>
+    </div>
+    <script src="/static/s.js"></script>
+<%- include('footer.ejs'); %>
+
+
+        
+
+
+

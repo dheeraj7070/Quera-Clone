@@ -1,0 +1,13 @@
+<%- include('header.ejs'); %>
+<div class="container">
+   <div class="wrapper">
+         <% for(let i =0; i< questions.length; i++ ) { %>
+            <a href="/api/<%= questions[i]._id %>">
+               <%- include('question.card.ejs',{question : questions[i]}); %>
+            </a>
+        <% } %>
+   </div>
+</div>
+
+<%- include('footer.ejs'); %>
+   

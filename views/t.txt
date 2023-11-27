@@ -1,0 +1,10 @@
+<h2>Answer</h2>
+                    <% if(questions[i].answer.length > 0) { %>
+                        
+                        <% for(let j=0; j< questions[i].answer.length; j++ ) { %>
+                            <h2><%= j %> <%= questions[i].answer[j].name %></h2>
+                            <p><%= questions[i].answer[j].ans %></p>
+                      <%  } %>
+                    <%} else { %>
+                        <p>No Answer </p> 
+                        <% } %> 
